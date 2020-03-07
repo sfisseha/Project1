@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Assignment3</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	</head>
+	<body>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    
+
+		<div class="d-flex justify-content-center" >
+      <a class="skip-link" id="skip" href="#posts">Skip to posts</a>
+       <div class= "content-wrapper" role="main" aria-label="Twittter-Posts">
+          <div id="twitterPosts"> 
+            <header class= "navlink" role="navigation" aria-label="navigationLinks">
+              <router-link to="/TicTacToe">Tic Tac Toe</router-link>
+              <router-link to="/Madlib">Madlib</router-link>
+              <router-view></router-view>  
+            </header>
+            <tweets class="posts"></tweets><br>
+          </div>
+        </div>
+    </div>
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- Include Vue from a CDN -->
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://unpkg.com/vue-resize-text"></script>
+    <script type="module" src="index.js"></script>
+	</body>
+</html>
