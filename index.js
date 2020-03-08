@@ -1,4 +1,4 @@
-import TicTacToe from './prelab3/tic-tac-toe.js';
+import TicTacToe from './prelab/tic-tac-toe.js';
 import Madlib from './lab3/js/madlibs.js';
 
 Vue.component('new-tweet', {
@@ -84,6 +84,9 @@ Vue.component('post-tweet', {
             dateStyle:{
                 'text-align': 'right',
             },
+            containerStyle:{
+                'background-color': '#d4ebf2'
+            },
             display: false,            
         };
     },   
@@ -93,7 +96,7 @@ Vue.component('post-tweet', {
             this.newTweet.text= tweetText;
             this.newTweet.user.name= 'You';
             this.display=true;
-            this.newTweet.user.profileImage= './images/penguin.png';
+            this.newTweet.user.profileImage= './penguin.png';
         },
 
         displayDate(postDate){
@@ -104,9 +107,9 @@ Vue.component('post-tweet', {
     template: `
     <div class="container">
       <new-tweet @new-text="displayNewTweet" @new-date="displayDate"></new-tweet>
-        <div class="row">
+        <div class="row" v-if="this.display== true" :style="containerStyle">
             <div class="col-250px">
-                <img :style="imageStyle" v-if="this.display== true" :src="newTweet.user.profileImage">
+                <img :style="imageStyle" :src="newTweet.user.profileImage">
             </div>
             <div class="col-sm">
                 <h3>{{newTweet.user.name}}</h3>
