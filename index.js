@@ -1,4 +1,4 @@
-import Madlib from './lab3/js/madlibs.js';
+import Madlib from './madlibs.js';
 
 Vue.component('new-tweet', {
     data() {
