@@ -1,4 +1,3 @@
-import TicTacToe from './prelab/tic-tac-toe.js';
 import Madlib from './lab3/js/madlibs.js';
 
 Vue.component('new-tweet', {
@@ -283,7 +282,6 @@ Vue.component('search-filter', {
 
 const myRouter= new VueRouter({
     routes: [
-        {path: '/TicTacToe', component: TicTacToe},
         {path: '/Madlib', component: Madlib}
     ]
 });
